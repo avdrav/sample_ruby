@@ -1,10 +1,10 @@
 language: ruby
 rvm:
-  - 2.0.0
-env:
-  - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
+  - ruby-1.9.2
+  - ruby-1.9.3-p484-railsexpress
+before_install:
+  - rvm install ruby-1.9.3-p484-railsexpress
 notifications:
      email:
          recipients:
-             - exampleone@org.com
-             - exampletwo@org.com
+             - avniel+sampe_ruby@shippable.com
